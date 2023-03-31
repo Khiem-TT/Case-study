@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird</title>
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: 2px solid #555555;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            border-radius: 12px;
+            transition-duration: 0.4s;
+        }
+        .button:hover {
+            background-color: #008CBA;
+            color: white;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body style="background-color: sandybrown">
+<center>
+    <canvas id="game" width="900" height="500" style="border: 50px solid saddlebrown"></canvas>
+    <h1 id="score" style="color: yellow">Scores: 0</h1>
+    <button class="button" onclick="location.reload()">&#10227; Replay</button>
+</center>
+</body>
+<script src="Main.js"></script>
+</html>
